@@ -3,71 +3,85 @@ import { DataCompletes } from "../assets/data";
 import Count from "./Count";
 
 function DataTable() {
-	const [searchTerm, setSearchTerm] = useState("");
-	const [totalCompletionFilter, setTotalCompletionFilter] = useState(false);
-	const [redemptionStatusFilter, setRedemptionStatusFilter] = useState(false);
-	const [nonRedemptionFilter, setNonRedemptionFilter] = useState(false);
+  const [searchTerm, setSearchTerm] = useState("");
+  const [totalCompletionFilter, setTotalCompletionFilter] = useState(false);
+  const [redemptionStatusFilter, setRedemptionStatusFilter] = useState(false);
+  const [nonRedemptionFilter, setNonRedemptionFilter] = useState(false);
 
-	const handleSearch = (event) => {
-		setSearchTerm(event.target.value);
-	};
+  const [data, setData] = useState(DataCompletes);
+  const [courseSortOrder, setCourseSortOrder] = useState("desc");
+  const [skillSortOrder, setSkillSortOrder] = useState("desc");
+  const [genAISortOrder, setGenAISortOrder] = useState("desc");
 
-	const handleTotalCompletionClick = () => {
-		setTotalCompletionFilter(!totalCompletionFilter);
-		if (redemptionStatusFilter) {
-			setRedemptionStatusFilter(!redemptionStatusFilter);
-		}
-		if (nonRedemptionFilter) {
-			setNonRedemptionFilter(!nonRedemptionFilter);
-		}
-	};
-	const handleRedemptionStatusClick = () => {
-		setRedemptionStatusFilter(!redemptionStatusFilter);
-		if (totalCompletionFilter) {
-			setTotalCompletionFilter(!totalCompletionFilter);
-		}
-		if (nonRedemptionFilter) {
-			setNonRedemptionFilter(!nonRedemptionFilter);
-		}
-	};
-	const handleNonRedemptionClick = () => {
-		setNonRedemptionFilter(!nonRedemptionFilter);
-		if (totalCompletionFilter) {
-			setTotalCompletionFilter(!totalCompletionFilter);
-		}
-		if (redemptionStatusFilter) {
-			setRedemptionStatusFilter(!redemptionStatusFilter);
-		}
-	};
+  const handleSearch = (event) => {
+    setSearchTerm(event.target.value);
+  };
 
-	let filteredData = DataCompletes.filter((datacomplete) =>
-		datacomplete["Student Name"]
-			.toLowerCase()
-			.includes(searchTerm.toLowerCase())
-	);
-	if (totalCompletionFilter) {
-		filteredData = filteredData.filter(
-			(dataComplete) =>
-				dataComplete[
-					"Total Completions of both Pathways"
-				].toLowerCase() === "yes"
-		);
-	}
+  const handleTotalCompletionClick = () => {
+    setTotalCompletionFilter(!totalCompletionFilter);
+  };
 
-	if (redemptionStatusFilter) {
-		filteredData = filteredData.filter(
-			(dataComplete) =>
-				dataComplete["Redemption Status"].toLowerCase() === "yes"
-		);
-	}
+  const handleRedemptionStatusClick = () => {
+    setRedemptionStatusFilter(!redemptionStatusFilter);
+  };
 
-	if (nonRedemptionFilter) {
-		filteredData = filteredData.filter(
-			(dataComplete) =>
-				dataComplete["Redemption Status"].toLowerCase() === "no"
-		);
-	}
+  const handleNonRedemptionClick = () => {
+    setNonRedemptionFilter(!nonRedemptionFilter);
+  };
 
+  const toggleSortOrder = (column) => {
+    if (column === "Courses") {
+      setCourseSortOrder(courseSortOrder === "asc" ? "desc" : "asc");
+    } else if (column === "Skill") {
+      setSkillSortOrder(skillSortOrder === "asc" ? "desc" : "asc");
+    } else if (column === "Gen AI") {
+      setGenAISortOrder(genAISortOrder === "asc" ? "desc" : "asc");
+    }
+  };
+
+  let filteredData = data.filter((datacomplete) =>
+    datacomplete["Student Name"]
+      .toLowerCase()
+      .includes(searchTerm.toLowerCase())
+  );
+
+  if (totalCompletionFilter) {
+    filteredData = filteredData.filter(
+      (dataComplete) =>
+        dataComplete["Total Completions of both Pathways"].toLowerCase() ===
+        "yes"
+    );
+  }
+
+  if (redemptionStatusFilter) {
+    filteredData = filteredData.filter(
+      (dataComplete) =>
+        dataComplete["Redemption Status"].toLowerCase() === "yes"
+    );
+  }
+
+  if (nonRedemptionFilter) {
+    filteredData = filteredData.filter(
+      (dataComplete) => dataComplete["Redemption Status"].toLowerCase() === "no"
+    );
+  }
+
+  const sortDataByColumn = (column, sortOrder) => {
+    const sortedData = [...filteredData];
+
+    sortedData.sort((a, b) => {
+      const valueA = parseInt(a[column]);
+      const valueB = parseInt(b[column]);
+
+      if (sortOrder === "asc") {
+        return valueA - valueB;
+      } else {
+        return valueB - valueA;
+      }
+    });
+
+    setData(sortedData);
+  };
 	return (
 		<>
 			<div className="w-full flex justify-center items-center pt-4">
