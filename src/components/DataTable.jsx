@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { DataCompletes } from "../assets/data";
 import Count from "./Count";
+import { Link } from "react-router-dom";
 
 function DataTable() {
 	const [searchTerm, setSearchTerm] = useState("");
@@ -133,6 +134,21 @@ function DataTable() {
 						></p>
 					</button>
 				</div>
+				<Link to="/leaderboard">
+				    <div class="buttons flex justify-around top-5 left-5">
+					    <button
+						    className="btn text-black"
+                            >
+						    <span className="w-full h-full absolute left-0 top-0 m-0 p-0 z-[1]"></span>
+						    <p
+						    	className="after:text-black"
+						    	data-start="good luck!"
+						    	data-text="Visit"
+						     	data-title="Leader Board"
+                                ></p>
+					    </button>
+				    </div>
+                </Link>
 			</div>
 			<Count />
 			<div className="py-5 px-0 max-w-7xl md:px-4 w-full flex items-center justify-center mx-auto">
