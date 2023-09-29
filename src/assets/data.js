@@ -1,4 +1,4 @@
-export const Date = "28 Sep 2023, 19:36";
+export const Date = "29 Sep 2023, 19:42";
 
 export const DataCompletes = [
     {
@@ -259,7 +259,7 @@ export const DataCompletes = [
     },
     {
         "Student Name": "Adarsh Aryan",
-        "# of Courses Completed": "0",
+        "# of Courses Completed": "1",
         "# of Skill Badges Completed": "0",
         "# of GenAI Game Completed": "0",
         "Total Completions of both Pathways": "No",
@@ -395,7 +395,7 @@ export const DataCompletes = [
     },
     {
         "Student Name": "Divyanshu Kashyap",
-        "# of Courses Completed": "2",
+        "# of Courses Completed": "3",
         "# of Skill Badges Completed": "0",
         "# of GenAI Game Completed": "1",
         "Total Completions of both Pathways": "No",
@@ -524,9 +524,9 @@ export const DataCompletes = [
     {
         "Student Name": "Ritik kumar",
         "# of Courses Completed": "4",
-        "# of Skill Badges Completed": "2",
+        "# of Skill Badges Completed": "4",
         "# of GenAI Game Completed": "1",
-        "Total Completions of both Pathways": "No",
+        "Total Completions of both Pathways": "Yes",
         "Redemption Status": "Yes"
     },
     {
