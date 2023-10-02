@@ -323,4 +323,24 @@ export const LeaderBoards = [
 		sl: "81",
 		Name: "Ayaskant Dash",
 	},
+	{
+		sl: "82",
+		Name: "Tarun Nayaka R",
+	},
+	{
+		sl: "83",
+		Name: "Nikhil Kumar",
+	},
+	{
+		sl: "84",
+		Name: "Devanshu Sharma",
+	},
+	{
+		sl: "85",
+		Name: "Ritik kumar",
+	},
+	{
+		sl: "86",
+		Name: "Divyanshu Kashyap",
+	},
 ];
