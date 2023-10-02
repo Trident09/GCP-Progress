@@ -9,9 +9,11 @@ export default function Layout() {
 	const [isLoading, setIsLoading] = useState(true);
 	const [isConfetti, setIsConfetti] = useState(true);
 	const [bodyWidth, setBodyWidth] = useState(document.body.innerWidth);
+	const [bodyHeight, setBodyHeight] = useState(document.body.innerHeight);
 
 	function handleSizeChange() {
-		setBodyWidth(document.body.innerWidth);
+		setBodyWidth(document.body.clintWidth);
+		setBodyHeight(document.body.clintHeight);
 	}
 
 	useEffect(() => {
@@ -38,7 +40,7 @@ export default function Layout() {
 			{isConfetti && (
 				<Confetti
 					width={bodyWidth}
-					height={window.innerHeight}
+					height={bodyHeight}
 					numberOfPieces={200}
 					gravity={0.06}
 					wind={0.01}
