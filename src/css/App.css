@@ -33,7 +33,7 @@ h4 {
 }
 
 .marquee:after{
-    content: " : The score will be updated every day between 6 p.m and 8 p.m";
+    content: " : The score displayed here is final and wont be updated again!";
 }
 
 @keyframes marquee{
