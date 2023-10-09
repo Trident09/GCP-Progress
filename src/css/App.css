@@ -33,7 +33,7 @@ h4 {
 }
 
 .marquee:after{
-    content: " : The score displayed here is final and wont be updated again!";
+    content: " : The score displayed here is final and won't be updated again!";
 }
 
 @keyframes marquee{
