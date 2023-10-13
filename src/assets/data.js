@@ -31,6 +31,6 @@ for(let i = 146; i <= 177; i++) {
         "# of Skill Badges Completed": "NA",
         "# of GenAI Game Completed": "NA",
         "Total Completions of both Pathways": "NA",
-        "Redemption Status": "NA"
+        "Redemption Status": "No"
     });
 }
