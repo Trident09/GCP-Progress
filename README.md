@@ -1,6 +1,6 @@
 # GCP-Progress
 
-[![GDSC-NFSU](https://raw.githubusercontent.com/Trident09/gcp-progress/main/src/assets/NFSU-Banner.png)](https://gdsc.community.dev/national-forensic-sciences-university-delhi/)
+![GDSC-NFSU](src/assets/NFSU-Banner.png)
 
 # Google Developers Student Club - National Forensic Sciences University
 
