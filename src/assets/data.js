@@ -13,7 +13,7 @@ for(let i = 1; i <= 89; i++) {
     });
 }
 
-for(let i = 1; i <= 51; i++) {
+for(let i = 90; i <= 145; i++) {
     DataCompletes.push({
         "Student Name": `Dummy Name ${i}`,
         "# of Courses Completed": "NA",
@@ -24,7 +24,7 @@ for(let i = 1; i <= 51; i++) {
     });
 }
 
-for(let i = 1; i <= 37; i++) {
+for(let i = 146; i <= 177; i++) {
     DataCompletes.push({
         "Student Name": `Dummy Name ${i}`,
         "# of Courses Completed": "NA",
