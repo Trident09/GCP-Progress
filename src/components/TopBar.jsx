@@ -13,7 +13,7 @@ function TopBar() {
 				<div className="h-full p-2 pl-0">
 					<span className="text-2xl"> Google Cloud&nbsp;</span>
 					<b>
-						<span class="text-3xl"> STUDY JAMS 23 - 24 COHORT 1</span>
+						<span class="text-3xl"> GDSC GenAI STUDY JAM </span>
 					</b>
 				</div>
 			</h4>
@@ -25,7 +25,7 @@ function TopBar() {
 			</div>
 			<div className="alert-slider w-[60%] m-auto mt-6 mb-0 bg-blue-100 text-red-600 rounded-3xl flex items-center overflow-hidden">
 				<p className="text-lg p-2 marquee">
-					The score displayed here is final and won't be updated again! 
+					The score will update everyday at 7:30 pm
 				</p>
 			</div>
 		</div>
