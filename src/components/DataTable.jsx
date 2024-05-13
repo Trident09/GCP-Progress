@@ -42,56 +42,39 @@ function DataTable() {
 	};
 
 	const sortedDataCompletes = [...DataCompletes].sort((a, b) => {
-		if (a["Redemption Status"] > b["Redemption Status"]) return -1;
-		if (a["Redemption Status"] < b["Redemption Status"]) return 1;
+		if (a["Redemption"] > b["Redemption"]) return -1;
+		if (a["Redemption"] < b["Redemption"]) return 1;
 
-		if (
-			a["Total Completions of both Pathways"] >
-			b["Total Completions of both Pathways"]
-		)
-			return -1;
-		if (
-			a["Total Completions of both Pathways"] <
-			b["Total Completions of both Pathways"]
-		)
-			return 1;
+		if (a["Completed"] > b["Completed"]) return -1;
+		if (a["Completed"] < b["Completed"]) return 1;
 
 		const sumA =
-			a["# of GenAI Game Completed"] +
-			a["# of Courses Completed"] +
-			a["# of Skill Badges Completed"];
+			a["Gen AI Arcade"] + a["Prompt Design"] + a["Develop GenAI"];
 		const sumB =
-			b["# of GenAI Game Completed"] +
-			b["# of Courses Completed"] +
-			b["# of Skill Badges Completed"];
+			b["Gen AI Arcade"] + b["Prompt Design"] + b["Develop GenAI"];
 		return sumB - sumA;
 	});
 
 	let filteredData = sortedDataCompletes.filter((datacomplete) =>
-		datacomplete["Student Name"]
+		datacomplete["User Name"]
 			.toLowerCase()
 			.includes(searchTerm.toLowerCase())
 	);
 	if (totalCompletionFilter) {
 		filteredData = filteredData.filter(
-			(dataComplete) =>
-				dataComplete[
-					"Total Completions of both Pathways"
-				].toLowerCase() === "yes"
+			(dataComplete) => dataComplete["Completed"].toLowerCase() === "yes"
 		);
 	}
 
 	if (redemptionStatusFilter) {
 		filteredData = filteredData.filter(
-			(dataComplete) =>
-				dataComplete["Redemption Status"].toLowerCase() === "yes"
+			(dataComplete) => dataComplete["Redemption"].toLowerCase() === "yes"
 		);
 	}
 
 	if (nonRedemptionFilter) {
 		filteredData = filteredData.filter(
-			(dataComplete) =>
-				dataComplete["Redemption Status"].toLowerCase() === "no"
+			(dataComplete) => dataComplete["Redemption"].toLowerCase() === "no"
 		);
 	}
 
@@ -177,13 +160,13 @@ function DataTable() {
 								scope="col"
 								className="text-center"
 							>
-								<b>Courses</b>
+								<b>Prompt Design</b>
 							</th>
 							<th
 								scope="col"
 								className="text-center"
 							>
-								<b>Skill</b>
+								<b>Develop GenAI</b>
 							</th>
 							<th
 								scope="col"
@@ -195,7 +178,7 @@ function DataTable() {
 								scope="col"
 								className="text-center"
 							>
-								<b>Totality</b>
+								<b>Completed</b>
 							</th>
 							<th
 								scope="col"
@@ -209,13 +192,10 @@ function DataTable() {
 						{filteredData.map((datacomplete, index) => (
 							<tr
 								className={
-									datacomplete[
-										"Total Completions of both Pathways"
-									] === "Yes"
+									datacomplete["Completed"] === "Yes"
 										? "bg-green-200"
 										: "" ||
-										  datacomplete["Redemption Status"] ===
-												"No"
+										  datacomplete["Redemption"] === "No"
 										? "bg-red-50"
 										: ""
 								}
@@ -224,37 +204,29 @@ function DataTable() {
 									{index + 1}
 								</td>
 								<td className="whitespace-nowrap">
-									{datacomplete["Student Name"].toUpperCase()}
+									{datacomplete["User Name"].toUpperCase()}
 									<b>
-										{datacomplete[
-											"Total Completions of both Pathways"
-										] === "Yes"
+										{datacomplete["Completed"] === "Yes"
 											? " 🏅 "
 											: ""}
 									</b>
 								</td>
 								<td className="whitespace-nowrap text-center">
-									{datacomplete["# of Courses Completed"]}
+									{datacomplete["Prompt Design"]}
 								</td>
 								<td className="whitespace-nowrap text-center">
-									{
-										datacomplete[
-											"# of Skill Badges Completed"
-										]
-									}
+									{datacomplete["Develop GenAI"]}
 								</td>
 								<td className="whitespace-nowrap text-center">
-									{datacomplete["# of GenAI Game Completed"]}
+									{datacomplete["Gen AI Arcade"]}
 								</td>
 								<td className="whitespace-nowrap text-center">
-									{datacomplete[
-										"Total Completions of both Pathways"
-									] === "Yes"
+									{datacomplete["Completed"] === "Yes"
 										? "✅"
 										: "❌"}
 								</td>
 								<td className="whitespace-nowrap text-center">
-									{datacomplete["Redemption Status"] === "Yes"
+									{datacomplete["Redemption"] === "Yes"
 										? "☑️"
 										: "❗️"}
 								</td>

@@ -3,20 +3,18 @@ import { DataCompletes } from "../assets/data";
 
 function Count() {
 	let redeemedStudents = DataCompletes.filter((datacomplete) =>
-		datacomplete["Redemption Status"].toLowerCase().includes("yes")
+		datacomplete["Redemption"].toLowerCase().includes("yes")
 	);
 	let genAICompletions = DataCompletes.filter((datacomplete) =>
-		datacomplete["# of GenAI Game Completed"].includes("1")
+		datacomplete["Gen AI Arcade"].includes("1")
 	);
 	let totalCompletions = DataCompletes.filter((datacomplete) =>
-		datacomplete["Total Completions of both Pathways"]
-			.toLowerCase()
-			.includes("yes")
+		datacomplete["Completed"].toLowerCase().includes("yes")
 	);
 	let GCCFCompletions = DataCompletes.filter(
 		(datacomplete) =>
-			datacomplete["# of Courses Completed"].includes("4") &&
-			datacomplete["# of Skill Badges Completed"].includes("4")
+			datacomplete["Prompt Design"].includes("4") &&
+			datacomplete["Develop GenAI"].includes("4")
 	);
 	return (
 		<div className="w-full flex justify-center items-center pt-4 py-2 flex-col">
@@ -34,7 +32,7 @@ function Count() {
 					<b className="text-blue-500">{genAICompletions.length}</b>
 				</p>
 				<p className="flex flex-row justify-between p-2 px-4 outline-1 outline outline-blue-700 m-2 rounded-md shadow-md">
-					Total GCCF Completions :{" "}
+					Total GCP Completions :{" "}
 					<b className="text-blue-500">{GCCFCompletions.length}</b>
 				</p>
 				<p className="flex flex-row justify-between p-2 px-4 outline-1 outline outline-blue-700 m-2 rounded-md shadow-md">
