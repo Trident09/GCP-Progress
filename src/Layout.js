@@ -4,10 +4,11 @@ import { Outlet } from "react-router-dom";
 import Footer from "./components/Footer";
 import NavBar from "./components/NavBar";
 import PreLoader from "./components/PreLoader";
+import { DataCompletes } from "./assets/data";
 
 export default function Layout() {
 	const [isLoading, setIsLoading] = useState(true);
-	const [isConfetti, setIsConfetti] = useState(true);
+	const [isConfetti, setIsConfetti] = useState(false);
 	const [bodyWidth, setBodyWidth] = useState(document.body.innerWidth);
 	const [bodyHeight, setBodyHeight] = useState(document.body.innerHeight);
 
@@ -15,6 +16,15 @@ export default function Layout() {
 		setBodyWidth(document.body.clintWidth);
 		setBodyHeight(document.body.clintHeight);
 	}
+
+	useEffect(() => {
+		let totalCompletions = DataCompletes.filter((datacomplete) =>
+			datacomplete["Completed"].toLowerCase().includes("yes")
+		);
+		if (totalCompletions.length >= 60) {
+			setIsConfetti(true);
+		}
+	},[]);
 
 	useEffect(() => {
 		const delay = () => {
