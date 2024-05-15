@@ -1,8 +1,126 @@
-export const LeaderBoards = [];
-
-for(let i = 1; i <= 89; i++) {
-    LeaderBoards.push({
-        sl: i.toString(),
-        Name: `Dummy Name ${i}`
-    });
-}
+export const LeaderBoards = [
+    {
+        "sl": "1",
+        "Name": "Anand Kumar"
+    },
+    {
+        "sl": "2",
+        "Name": "RAHUL BERA"
+    },
+    {
+        "sl": "3",
+        "Name": "Kartik Gautam"
+    },
+    {
+        "sl": "4",
+        "Name": "Jatin Sharma"
+    },
+    {
+        "sl": "5",
+        "Name": "Manish kumar"
+    },
+    {
+        "sl": "6",
+        "Name": "Kajal Gupta"
+    },
+    {
+        "sl": "7",
+        "Name": "Aman Gupta"
+    },
+    {
+        "sl": "8",
+        "Name": "Prakhar tiwari"
+    },
+    {
+        "sl": "9",
+        "Name": "Aditya Garg"
+    },
+    {
+        "sl": "10",
+        "Name": "Manotosh Sarkar"
+    },
+    {
+        "sl": "11",
+        "Name": "Ayushi Bhasker"
+    },
+    {
+        "sl": "12",
+        "Name": "Bhagyesh Mahesh Katkar"
+    },
+    {
+        "sl": "13",
+        "Name": "Abhishek Prajapati"
+    },
+    {
+        "sl": "14",
+        "Name": "Md sohel"
+    },
+    {
+        "sl": "15",
+        "Name": "Supriya Singh"
+    },
+    {
+        "sl": "16",
+        "Name": "Raj Chakraborty"
+    },
+    {
+        "sl": "17",
+        "Name": "Ayush Anand"
+    },
+    {
+        "sl": "18",
+        "Name": "Jatin Sharma"
+    },
+    {
+        "sl": "19",
+        "Name": "Joyita Bhawal"
+    },
+    {
+        "sl": "20",
+        "Name": "Sachin Narwal"
+    },
+    {
+        "sl": "21",
+        "Name": "Sumit Kumar"
+    },
+    {
+        "sl": "22",
+        "Name": "Surat Singh"
+    },
+    {
+        "sl": "23",
+        "Name": "Shishir Shrivastava"
+    },
+    {
+        "sl": "24",
+        "Name": "Abhishek Kumar"
+    },
+    {
+        "sl": "25",
+        "Name": "Mitali Raj"
+    },
+    {
+        "sl": "26",
+        "Name": "Garv Chauhan"
+    },
+    {
+        "sl": "27",
+        "Name": "Aviral K"
+    },
+    {
+        "sl": "28",
+        "Name": "Dhruv chauhan"
+    },
+    {
+        "sl": "29",
+        "Name": "Garv Nihore"
+    },
+    {
+        "sl": "30",
+        "Name": "Mansha Rohilla"
+    },
+    {
+        "sl": "31",
+        "Name": "Somya Bhatt"
+    }
+];
