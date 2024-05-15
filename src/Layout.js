@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 import Confetti from "react-confetti";
 import { Outlet } from "react-router-dom";
+import { DataCompletes } from "./assets/data";
 import Footer from "./components/Footer";
 import NavBar from "./components/NavBar";
 import PreLoader from "./components/PreLoader";
-import { DataCompletes } from "./assets/data";
 
 export default function Layout() {
 	const [isLoading, setIsLoading] = useState(true);
@@ -24,7 +24,7 @@ export default function Layout() {
 		if (totalCompletions.length >= 60) {
 			setIsConfetti(true);
 		}
-	},[]);
+	}, []);
 
 	useEffect(() => {
 		const delay = () => {

@@ -1,6 +1,6 @@
 import React from "react";
-import TopBar from "../components/TopBar";
 import DataTable from "../components/DataTable";
+import TopBar from "../components/TopBar";
 
 function Home() {
 	return (
