@@ -26,23 +26,23 @@ h4 {
 	font-size: 17px;
 }
 
-.marquee{
-    padding: 24px 0;
-    white-space: nowrap;
-    animation: marquee 10.5s linear infinite;
+.marquee {
+	padding: 24px 0;
+	white-space: nowrap;
+	animation: marquee 10.5s linear infinite;
 }
 
-.marquee:after{
-    content: " : The score will update everyday at 7:30 pm";
+.marquee:after {
+	content: " : The score will update everyday at 7:30 pm";
 }
 
-@keyframes marquee{
-    0% {
-        transform: translateX(100%)
-    }
-    100% {
-        transform: translateX(-100%)
-    }
+@keyframes marquee {
+	0% {
+		transform: translateX(100%);
+	}
+	100% {
+		transform: translateX(-100%);
+	}
 }
 
 .buttons button {
