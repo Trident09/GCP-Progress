@@ -698,7 +698,7 @@ export const DataCompletes = [
             "Redemption": "Yes"
         },
         {
-            "User Name": "Vijayakumar hiremath",
+            "User Name": "Vijay hiremath",
             "Prompt Design": "0",
             "Develop GenAI": "1",
             "Gen AI Arcade": "1",
