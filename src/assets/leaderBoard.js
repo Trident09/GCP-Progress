@@ -161,6 +161,6 @@ export const LeaderBoards = [
 	},
 	{
 		sl: "41",
-		Name: "Vijayakumar hiremath",
+		Name: "Vijay hiremath",
 	},
 ];
