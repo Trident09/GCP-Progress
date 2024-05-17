@@ -47,7 +47,7 @@ function Count() {
 							: totalCompletions.length >= 60 &&
 							  totalCompletions.length < 80
 							? "Two"
-							: "One"}
+							: "NA"}
 					</b>
 				</p>
 			</div>

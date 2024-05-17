@@ -147,4 +147,20 @@ export const LeaderBoards = [
 		sl: "37",
 		Name: "prashant hiremath",
 	},
+	{
+		sl: "38",
+		Name: "Divyanshu Kashyap",
+	},
+	{
+		sl: "39",
+		Name: "Akash",
+	},
+	{
+		sl: "40",
+		Name: "Abhay Gupta",
+	},
+	{
+		sl: "41",
+		Name: "Vijayakumar hiremath",
+	},
 ];
