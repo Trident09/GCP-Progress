@@ -25,7 +25,7 @@ function TopBar() {
 			</div>
 			<div className="alert-slider w-[60%] m-auto mt-6 mb-0 bg-blue-100 text-red-600 rounded-3xl flex items-center overflow-hidden">
 				<p className="text-lg p-1 marquee">
-					The score will update everyday at 2 PM
+					The score will update everyday at 7:30 PM
 				</p>
 			</div>
 		</div>
