@@ -207,4 +207,36 @@ export const LeaderBoards = [
 		sl: "52",
 		Name: "VIVEK KUMAR",
 	},
+	{
+		sl: "53",
+		Name: "Kushagra Singh",
+	},
+	{
+		sl: "54",
+		Name: "Aditi Nagpal",
+	},
+	{
+		sl: "55",
+		Name: "Sourabh Roj",
+	},
+	{
+		sl: "56",
+		Name: "Alok Danve",
+	},
+	{
+		sl: "57",
+		Name: "Bhawana",
+	},
+	{
+		sl: "58",
+		Name: "Rakhi Kumari",
+	},
+	{
+		sl: "59",
+		Name: "Suresh",
+	},
+	{
+		sl: "60",
+		Name: "Shreya",
+	},
 ];

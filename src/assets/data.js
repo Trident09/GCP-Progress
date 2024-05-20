@@ -3,10 +3,10 @@ export const Date = "19 May 2024, 13:14 ";
 export const DataCompletes =[
     {
         "User Name": "Kushagra Singh",
-        "Prompt Design": "0",
-        "Develop GenAI": "0",
-        "Gen AI Arcade": "0",
-        "Completed": "No",
+        "Prompt Design": "1",
+        "Develop GenAI": "1",
+        "Gen AI Arcade": "1",
+        "Completed": "Yes",
         "Redemption": "Yes"
     },
     {
@@ -76,9 +76,9 @@ export const DataCompletes =[
     {
         "User Name": "Aditi Nagpal",
         "Prompt Design": "1",
-        "Develop GenAI": "0",
+        "Develop GenAI": "1",
         "Gen AI Arcade": "1",
-        "Completed": "No",
+        "Completed": "Yes",
         "Redemption": "Yes"
     },
     {
@@ -115,7 +115,7 @@ export const DataCompletes =[
     },
     {
         "User Name": "Aditya Dahiya",
-        "Prompt Design": "0",
+        "Prompt Design": "1",
         "Develop GenAI": "0",
         "Gen AI Arcade": "0",
         "Completed": "No",
@@ -339,10 +339,10 @@ export const DataCompletes =[
     },
     {
         "User Name": "Sourabh Roj",
-        "Prompt Design": "0",
-        "Develop GenAI": "0",
-        "Gen AI Arcade": "0",
-        "Completed": "No",
+        "Prompt Design": "1",
+        "Develop GenAI": "1",
+        "Gen AI Arcade": "1",
+        "Completed": "Yes",
         "Redemption": "Yes"
     },
     {
@@ -389,8 +389,8 @@ export const DataCompletes =[
         "User Name": "Alok Danve",
         "Prompt Design": "1",
         "Develop GenAI": "1",
-        "Gen AI Arcade": "0",
-        "Completed": "No",
+        "Gen AI Arcade": "1",
+        "Completed": "Yes",
         "Redemption": "Yes"
     },
     {
@@ -459,9 +459,9 @@ export const DataCompletes =[
     },
     {
         "User Name": "Vaibhav Tripathi",
-        "Prompt Design": "0",
+        "Prompt Design": "1",
         "Develop GenAI": "0",
-        "Gen AI Arcade": "0",
+        "Gen AI Arcade": "1",
         "Completed": "No",
         "Redemption": "Yes"
     },
@@ -484,9 +484,9 @@ export const DataCompletes =[
     {
         "User Name": "Bhawana",
         "Prompt Design": "1",
-        "Develop GenAI": "0",
+        "Develop GenAI": "1",
         "Gen AI Arcade": "1",
-        "Completed": "No",
+        "Completed": "Yes",
         "Redemption": "Yes"
     },
     {
@@ -597,7 +597,7 @@ export const DataCompletes =[
         "User Name": "Aakash Kharb",
         "Prompt Design": "0",
         "Develop GenAI": "0",
-        "Gen AI Arcade": "0",
+        "Gen AI Arcade": "1",
         "Completed": "No",
         "Redemption": "Yes"
     },
@@ -627,10 +627,10 @@ export const DataCompletes =[
     },
     {
         "User Name": "Rakhi Kumari",
-        "Prompt Design": "0",
-        "Develop GenAI": "0",
-        "Gen AI Arcade": "0",
-        "Completed": "No",
+        "Prompt Design": "1",
+        "Develop GenAI": "1",
+        "Gen AI Arcade": "1",
+        "Completed": "Yes",
         "Redemption": "Yes"
     },
     {
@@ -835,7 +835,7 @@ export const DataCompletes =[
     },
     {
         "User Name": "Digvijay Singh",
-        "Prompt Design": "0",
+        "Prompt Design": "1",
         "Develop GenAI": "0",
         "Gen AI Arcade": "0",
         "Completed": "No",
@@ -883,10 +883,10 @@ export const DataCompletes =[
     },
     {
         "User Name": "Suresh",
-        "Prompt Design": "0",
-        "Develop GenAI": "0",
-        "Gen AI Arcade": "0",
-        "Completed": "No",
+        "Prompt Design": "1",
+        "Develop GenAI": "1",
+        "Gen AI Arcade": "1",
+        "Completed": "Yes",
         "Redemption": "Yes"
     },
     {
@@ -916,9 +916,9 @@ export const DataCompletes =[
     {
         "User Name": "Shreya",
         "Prompt Design": "1",
-        "Develop GenAI": "0",
-        "Gen AI Arcade": "0",
-        "Completed": "No",
+        "Develop GenAI": "1",
+        "Gen AI Arcade": "1",
+        "Completed": "Yes",
         "Redemption": "Yes"
     },
     {
