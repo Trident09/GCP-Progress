@@ -255,4 +255,36 @@ export const LeaderBoards = [
 		sl: "64",
 		Name: "Aakash Kharb",
 	},
+	{
+		sl: "65",
+		Name: "Roushan Kumar Singh",
+	},
+	{
+		sl: "66",
+		Name: "Priyanshi Pawar",
+	},
+	{
+		sl: "67",
+		Name: "Vaibhav Tripathi",
+	},
+	{
+		sl: "68",
+		Name: "Susovan Pati",
+	},
+	{
+		sl: "69",
+		Name: "Vijayakumar Hiremath",
+	},
+	{
+		sl: "70",
+		Name: "Kushagra",
+	},
+	{
+		sl: "71",
+		Name: "Hemanth Prabhu",
+	},
+	{
+		sl: "72",
+		Name: "Anand Kumar",
+	},
 ];
