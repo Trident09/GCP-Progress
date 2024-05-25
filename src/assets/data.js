@@ -1,4 +1,4 @@
-export const Date = "24 May 2024, 12:53 ";
+export const Date = "25 May 2024, 12:29 ";
 
 export const DataCompletes =[
     {
@@ -307,9 +307,9 @@ export const DataCompletes =[
     },
     {
         "User Name": "Kajal Meena",
-        "Prompt Design": "0",
+        "Prompt Design": "1",
         "Develop GenAI": "0",
-        "Gen AI Arcade": "0",
+        "Gen AI Arcade": "1",
         "Completed": "No",
         "Redemption": "Yes"
     },
@@ -453,7 +453,7 @@ export const DataCompletes =[
         "User Name": "Manu krishnan k",
         "Prompt Design": "0",
         "Develop GenAI": "0",
-        "Gen AI Arcade": "0",
+        "Gen AI Arcade": "1",
         "Completed": "No",
         "Redemption": "Yes"
     },
@@ -493,7 +493,7 @@ export const DataCompletes =[
         "User Name": "MUHAMMED ASLAH . K",
         "Prompt Design": "0",
         "Develop GenAI": "0",
-        "Gen AI Arcade": "0",
+        "Gen AI Arcade": "1",
         "Completed": "No",
         "Redemption": "Yes"
     },
@@ -621,7 +621,7 @@ export const DataCompletes =[
         "User Name": "Rachna Singh",
         "Prompt Design": "0",
         "Develop GenAI": "0",
-        "Gen AI Arcade": "0",
+        "Gen AI Arcade": "1",
         "Completed": "No",
         "Redemption": "Yes"
     },
@@ -741,7 +741,7 @@ export const DataCompletes =[
         "User Name": "Devarakonda Anusha",
         "Prompt Design": "0",
         "Develop GenAI": "0",
-        "Gen AI Arcade": "0",
+        "Gen AI Arcade": "1",
         "Completed": "No",
         "Redemption": "No"
     },
@@ -771,10 +771,10 @@ export const DataCompletes =[
     },
     {
         "User Name": "Abhilasha Kumari",
-        "Prompt Design": "0",
+        "Prompt Design": "1",
         "Develop GenAI": "1",
         "Gen AI Arcade": "1",
-        "Completed": "No",
+        "Completed": "Yes",
         "Redemption": "Yes"
     },
     {
@@ -1051,7 +1051,7 @@ export const DataCompletes =[
     },
     {
         "User Name": "Sneha Das",
-        "Prompt Design": "0",
+        "Prompt Design": "1",
         "Develop GenAI": "0",
         "Gen AI Arcade": "1",
         "Completed": "No",
