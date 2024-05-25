@@ -69,16 +69,12 @@ function LeaderBoard() {
 								<td className="whitespace-nowrap">
 									{datacomplete["Name"].toUpperCase()}
 									<b>
-										{index <= 39
+										{index <= 59
 											? "🥇"
 											: (index =
-													40 && index <= 59
+													60 && index <= 79
 														? "🥈"
-														: (index =
-																60 &&
-																index <= 79
-																	? "🥉"
-																	: "😔"))}
+														: "😔")}
 									</b>
 								</td>
 							</tr>
