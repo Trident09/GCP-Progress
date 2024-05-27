@@ -352,7 +352,7 @@ export const LeaderBoards = [
 		Name: "Manu krishnan k",
 	},
 	{
-		sl: "89",
+		sl: "90",
 		Name: "Rachna Singh",
 	},
 	{
