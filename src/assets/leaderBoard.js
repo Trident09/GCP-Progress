@@ -355,4 +355,8 @@ export const LeaderBoards = [
 		sl: "89",
 		Name: "Rachna Singh",
 	},
+	{
+		sl: "89",
+		Name: "Sneha Das",
+	},
 ];
