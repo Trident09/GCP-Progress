@@ -1,4 +1,4 @@
-export const Date = "27 May 2024, 13:15 ";
+export const Date = "28 May 2024, 14:16 ";
 
 export const DataCompletes =[
     {
@@ -116,9 +116,9 @@ export const DataCompletes =[
     {
         "User Name": "Aditya Dahiya",
         "Prompt Design": "1",
-        "Develop GenAI": "0",
-        "Gen AI Arcade": "0",
-        "Completed": "No",
+        "Develop GenAI": "1",
+        "Gen AI Arcade": "1",
+        "Completed": "Yes",
         "Redemption": "Yes"
     },
     {
