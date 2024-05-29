@@ -33,7 +33,7 @@ h4 {
 }
 
 .marquee:after {
-	content: " : The event has been ended. Thank you for participating.";
+	content: " ";
 }
 
 @keyframes marquee {

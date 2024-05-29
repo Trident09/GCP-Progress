@@ -25,7 +25,7 @@ function TopBar() {
 			</div>
 			<div className="alert-slider w-[60%] m-auto mt-6 mb-0 bg-blue-100 text-red-600 rounded-3xl flex items-center overflow-hidden">
 				<p className="text-lg p-1 marquee">
-					🚀 Welcome to the Google Cloud Study Jam 2024! 🚀
+					🚀 The event has been ended. Thank you for participating 🚀
 				</p>
 			</div>
 		</div>
