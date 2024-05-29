@@ -33,7 +33,7 @@ h4 {
 }
 
 .marquee:after {
-	content: " : The score will update everyday at 12:30 pm";
+	content: " : The event has been ended. Thank you for participating.";
 }
 
 @keyframes marquee {
