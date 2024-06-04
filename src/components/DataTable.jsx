@@ -87,7 +87,7 @@ function DataTable() {
 				scrollTo: false,
 			},
 		});
-
+	
 		tour.addStep({
 			id: "Students",
 			text: "This is the total number of students who have enrolled.",
@@ -97,7 +97,11 @@ function DataTable() {
 			},
 			buttons: [
 				{
-					text: "Next",
+					text: "╳",
+					action: tour.cancel,
+				},
+				{
+					text: "→",
 					action: tour.next,
 				},
 			],
@@ -111,11 +115,15 @@ function DataTable() {
 			},
 			buttons: [
 				{
-					text: "Previous",
+					text: "╳",
+					action: tour.cancel,
+				},
+				{
+					text: "←",
 					action: tour.back,
 				},
 				{
-					text: "Next",
+					text: "→",
 					action: tour.next,
 				},
 			],
@@ -129,11 +137,15 @@ function DataTable() {
 			},
 			buttons: [
 				{
-					text: "Previous",
+					text: "╳",
+					action: tour.cancel,
+				},
+				{
+					text: "←",
 					action: tour.back,
 				},
 				{
-					text: "Next",
+					text: "→",
 					action: tour.next,
 				},
 			],
@@ -147,11 +159,15 @@ function DataTable() {
 			},
 			buttons: [
 				{
-					text: "Previous",
+					text: "╳",
+					action: tour.cancel,
+				},
+				{
+					text: "←",
 					action: tour.back,
 				},
 				{
-					text: "Next",
+					text: "→",
 					action: tour.next,
 				},
 			],
@@ -165,11 +181,15 @@ function DataTable() {
 			},
 			buttons: [
 				{
-					text: "Previous",
+					text: "╳",
+					action: tour.cancel,
+				},
+				{
+					text: "←",
 					action: tour.back,
 				},
 				{
-					text: "Next",
+					text: "→",
 					action: tour.next,
 				},
 			],
@@ -183,16 +203,20 @@ function DataTable() {
 			},
 			buttons: [
 				{
-					text: "Previous",
+					text: "╳",
+					action: tour.cancel,
+				},
+				{
+					text: "←",
 					action: tour.back,
 				},
 				{
-					text: "Next",
+					text: "→",
 					action: tour.next,
 				},
 			],
 		});
-
+	
 		tour.addStep({
 			id: "SearchBar",
 			text: "This is the search bar. You can search for students by their name here.",
@@ -202,16 +226,20 @@ function DataTable() {
 			},
 			buttons: [
 				{
-					text: "Previous",
+					text: "╳",
+					action: tour.cancel,
+				},
+				{
+					text: "←",
 					action: tour.back,
 				},
 				{
-					text: "Next",
+					text: "→",
 					action: tour.next,
 				},
 			],
 		});
-
+	
 		tour.addStep({
 			id: "RedemptionDone",
 			text: "This button filters the students who have redeemed their courses.",
@@ -221,16 +249,20 @@ function DataTable() {
 			},
 			buttons: [
 				{
-					text: "Previous",
+					text: "╳",
+					action: tour.cancel,
+				},
+				{
+					text: "←",
 					action: tour.back,
 				},
 				{
-					text: "Next",
+					text: "→",
 					action: tour.next,
 				},
 			],
 		});
-
+	
 		tour.addStep({
 			id: "TotalCompletion",
 			text: "This button filters the students who have completed their courses.",
@@ -240,16 +272,20 @@ function DataTable() {
 			},
 			buttons: [
 				{
-					text: "Previous",
+					text: "╳",
+					action: tour.cancel,
+				},
+				{
+					text: "←",
 					action: tour.back,
 				},
 				{
-					text: "Next",
+					text: "→",
 					action: tour.next,
 				},
 			],
 		});
-
+	
 		tour.addStep({
 			id: "NotRedeemed",
 			text: "This button filters the students who have not redeemed their courses.",
@@ -259,16 +295,20 @@ function DataTable() {
 			},
 			buttons: [
 				{
-					text: "Previous",
+					text: "╳",
+					action: tour.cancel,
+				},
+				{
+					text: "←",
 					action: tour.back,
 				},
 				{
-					text: "Next",
+					text: "→",
 					action: tour.next,
 				},
 			],
 		});
-
+	
 		tour.addStep({
 			id: "Leaderboard",
 			text: "This button takes you to the leaderboard.",
@@ -278,16 +318,20 @@ function DataTable() {
 			},
 			buttons: [
 				{
-					text: "Previous",
+					text: "╳",
+					action: tour.cancel,
+				},
+				{
+					text: "←",
 					action: tour.back,
 				},
 				{
-					text: "Next",
+					text: "→",
 					action: tour.next,
 				},
 			],
 		});
-
+	
 		tour.addStep({
 			id: "TableData",
 			text: "This is the table where the student data is displayed.",
@@ -297,7 +341,11 @@ function DataTable() {
 			},
 			buttons: [
 				{
-					text: "Previous",
+					text: "╳",
+					action: tour.cancel,
+				},
+				{
+					text: "←",
 					action: tour.back,
 				},
 				{
@@ -306,9 +354,9 @@ function DataTable() {
 				},
 			],
 		});
-
+	
 		tour.start();
-
+	
 		return () => {
 			tour.complete();
 		};
