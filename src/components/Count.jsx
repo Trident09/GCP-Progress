@@ -3,18 +3,20 @@ import { DataCompletes } from "../assets/data";
 
 function Count() {
 	let redeemedStudents = DataCompletes.filter((datacomplete) =>
-		datacomplete["Redemption"].toLowerCase().includes("yes")
+		datacomplete["Access Code Redemption Status"]
+			.toLowerCase()
+			.includes("yes")
 	);
 	let genAICompletions = DataCompletes.filter((datacomplete) =>
-		datacomplete["Gen AI Arcade"].includes("1")
+		datacomplete["# of Arcade Games Completed"].includes("1")
 	);
 	let totalCompletions = DataCompletes.filter((datacomplete) =>
 		datacomplete["Completed"].toLowerCase().includes("yes")
 	);
 	let GCCFCompletions = DataCompletes.filter(
 		(datacomplete) =>
-			datacomplete["Prompt Design"].includes("1") &&
-			datacomplete["Develop GenAI"].includes("1")
+			datacomplete["All Skill Badges & Games Completed"].includes("1") &&
+			datacomplete["# of Skill Badges Completed"].includes("16")
 	);
 	return (
 		<div className="w-full flex justify-center items-center pt-4 py-2 flex-col">

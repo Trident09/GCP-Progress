@@ -13,7 +13,7 @@ function TopBar() {
 				<div className="h-full p-2 pl-0">
 					<span className="text-2xl"> Google Cloud&nbsp;</span>
 					<b>
-						<span class="text-3xl"> GDSC GenAI STUDY JAM 2024</span>
+						<span class="text-3xl"> GDG on Campus GenAI STUDY JAM 2024</span>
 					</b>
 				</div>
 			</h4>
@@ -25,7 +25,7 @@ function TopBar() {
 			</div>
 			<div className="alert-slider w-[60%] m-auto mt-6 mb-0 bg-blue-100 text-red-600 rounded-3xl flex items-center overflow-hidden">
 				<p className="text-lg p-1 marquee">
-					🚀 The event has been ended. Thank you for participating 🚀
+					🚀 This scoreboard will be updated daily at 08:00 PM IST. Please Stay tuned for the latest updates. 🚀
 				</p>
 			</div>
 		</div>

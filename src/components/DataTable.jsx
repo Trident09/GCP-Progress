@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Shepherd from "shepherd.js";
 import "shepherd.js/dist/css/shepherd.css";
 import { DataCompletes } from "../assets/data";
 
@@ -43,16 +42,28 @@ function DataTable() {
 	};
 
 	const sortedDataCompletes = [...DataCompletes].sort((a, b) => {
-		if (a["Redemption"] > b["Redemption"]) return -1;
-		if (a["Redemption"] < b["Redemption"]) return 1;
+		if (
+			a["Access Code Redemption Status"] >
+			b["Access Code Redemption Status"]
+		)
+			return -1;
+		if (
+			a["Access Code Redemption Status"] <
+			b["Access Code Redemption Status"]
+		)
+			return 1;
 
 		if (a["Completed"] > b["Completed"]) return -1;
 		if (a["Completed"] < b["Completed"]) return 1;
 
 		const sumA =
-			a["Gen AI Arcade"] + a["Prompt Design"] + a["Develop GenAI"];
+			a["# of Arcade Games Completed"] +
+			a["All Skill Badges & Games Completed"] +
+			a["# of Skill Badges Completed"];
 		const sumB =
-			b["Gen AI Arcade"] + b["Prompt Design"] + b["Develop GenAI"];
+			b["# of Arcade Games Completed"] +
+			b["All Skill Badges & Games Completed"] +
+			b["# of Skill Badges Completed"];
 		return sumB - sumA;
 	});
 
@@ -69,312 +80,35 @@ function DataTable() {
 
 	if (redemptionStatusFilter) {
 		filteredData = filteredData.filter(
-			(dataComplete) => dataComplete["Redemption"].toLowerCase() === "yes"
+			(dataComplete) =>
+				dataComplete["Access Code Redemption Status"].toLowerCase() ===
+				"yes"
 		);
 	}
 
 	if (nonRedemptionFilter) {
 		filteredData = filteredData.filter(
-			(dataComplete) => dataComplete["Redemption"].toLowerCase() === "no"
+			(dataComplete) =>
+				dataComplete["Access Code Redemption Status"].toLowerCase() ===
+				"no"
 		);
 	}
 
-	useEffect(() => {
-		const tour = new Shepherd.Tour({
-			useModalOverlay: true,
-			defaultStepOptions: {
-				classes: "Students",
-				scrollTo: false,
-			},
-		});
-	
-		tour.addStep({
-			id: "Students",
-			text: "This is the total number of students who have enrolled.",
-			attachTo: {
-				element: ".Students",
-				on: "bottom",
-			},
-			buttons: [
-				{
-					text: "╳",
-					action: tour.cancel,
-				},
-				{
-					text: "→",
-					action: tour.next,
-				},
-			],
-		});
-		tour.addStep({
-			id: "Redemptions",
-			text: "This is the total number of students who have redeemed their courses.",
-			attachTo: {
-				element: ".Redemptions",
-				on: "bottom",
-			},
-			buttons: [
-				{
-					text: "╳",
-					action: tour.cancel,
-				},
-				{
-					text: "←",
-					action: tour.back,
-				},
-				{
-					text: "→",
-					action: tour.next,
-				},
-			],
-		});
-		tour.addStep({
-			id: "GenAI",
-			text: "This is the total number of students who have completed the GenAI course.",
-			attachTo: {
-				element: ".GenAI",
-				on: "bottom",
-			},
-			buttons: [
-				{
-					text: "╳",
-					action: tour.cancel,
-				},
-				{
-					text: "←",
-					action: tour.back,
-				},
-				{
-					text: "→",
-					action: tour.next,
-				},
-			],
-		});
-		tour.addStep({
-			id: "GCP",
-			text: "This is the total number of students who have completed the GCP course.",
-			attachTo: {
-				element: ".GCP",
-				on: "bottom",
-			},
-			buttons: [
-				{
-					text: "╳",
-					action: tour.cancel,
-				},
-				{
-					text: "←",
-					action: tour.back,
-				},
-				{
-					text: "→",
-					action: tour.next,
-				},
-			],
-		});
-		tour.addStep({
-			id: "Totality",
-			text: "This is the total number of students who have completed both the courses.",
-			attachTo: {
-				element: ".Totality",
-				on: "bottom",
-			},
-			buttons: [
-				{
-					text: "╳",
-					action: tour.cancel,
-				},
-				{
-					text: "←",
-					action: tour.back,
-				},
-				{
-					text: "→",
-					action: tour.next,
-				},
-			],
-		});
-		tour.addStep({
-			id: "Tier",
-			text: "This is the tier of the student based on the total completions.",
-			attachTo: {
-				element: ".Tier",
-				on: "bottom",
-			},
-			buttons: [
-				{
-					text: "╳",
-					action: tour.cancel,
-				},
-				{
-					text: "←",
-					action: tour.back,
-				},
-				{
-					text: "→",
-					action: tour.next,
-				},
-			],
-		});
-	
-		tour.addStep({
-			id: "SearchBar",
-			text: "This is the search bar. You can search for students by their name here.",
-			attachTo: {
-				element: ".SearchBar",
-				on: "bottom",
-			},
-			buttons: [
-				{
-					text: "╳",
-					action: tour.cancel,
-				},
-				{
-					text: "←",
-					action: tour.back,
-				},
-				{
-					text: "→",
-					action: tour.next,
-				},
-			],
-		});
-	
-		tour.addStep({
-			id: "RedemptionDone",
-			text: "This button filters the students who have redeemed their courses.",
-			attachTo: {
-				element: ".RedemptionDone",
-				on: "bottom",
-			},
-			buttons: [
-				{
-					text: "╳",
-					action: tour.cancel,
-				},
-				{
-					text: "←",
-					action: tour.back,
-				},
-				{
-					text: "→",
-					action: tour.next,
-				},
-			],
-		});
-	
-		tour.addStep({
-			id: "TotalCompletion",
-			text: "This button filters the students who have completed their courses.",
-			attachTo: {
-				element: ".TotalCompletion",
-				on: "bottom",
-			},
-			buttons: [
-				{
-					text: "╳",
-					action: tour.cancel,
-				},
-				{
-					text: "←",
-					action: tour.back,
-				},
-				{
-					text: "→",
-					action: tour.next,
-				},
-			],
-		});
-	
-		tour.addStep({
-			id: "NotRedeemed",
-			text: "This button filters the students who have not redeemed their courses.",
-			attachTo: {
-				element: ".NotRedeemed",
-				on: "bottom",
-			},
-			buttons: [
-				{
-					text: "╳",
-					action: tour.cancel,
-				},
-				{
-					text: "←",
-					action: tour.back,
-				},
-				{
-					text: "→",
-					action: tour.next,
-				},
-			],
-		});
-	
-		tour.addStep({
-			id: "Leaderboard",
-			text: "This button takes you to the leaderboard.",
-			attachTo: {
-				element: ".Leaderboard",
-				on: "bottom",
-			},
-			buttons: [
-				{
-					text: "╳",
-					action: tour.cancel,
-				},
-				{
-					text: "←",
-					action: tour.back,
-				},
-				{
-					text: "→",
-					action: tour.next,
-				},
-			],
-		});
-	
-		tour.addStep({
-			id: "TableData",
-			text: "This is the table where the student data is displayed.",
-			attachTo: {
-				element: ".TableData",
-				on: "bottom",
-			},
-			buttons: [
-				{
-					text: "╳",
-					action: tour.cancel,
-				},
-				{
-					text: "←",
-					action: tour.back,
-				},
-				{
-					text: "End",
-					action: tour.complete,
-				},
-			],
-		});
-	
-		tour.start();
-	
-		return () => {
-			tour.complete();
-		};
-	}, []);
-
 	const redeemedStudents = DataCompletes.filter((datacomplete) =>
-		datacomplete["Redemption"].toLowerCase().includes("yes")
+		datacomplete["Access Code Redemption Status"]
+			.toLowerCase()
+			.includes("yes")
 	);
 	const genAICompletions = DataCompletes.filter((datacomplete) =>
-		datacomplete["Gen AI Arcade"].includes("1")
+		datacomplete["# of Arcade Games Completed"].includes("1")
 	);
 	const totalCompletions = DataCompletes.filter((datacomplete) =>
 		datacomplete["Completed"].toLowerCase().includes("yes")
 	);
 	const GCCFCompletions = DataCompletes.filter(
 		(datacomplete) =>
-			datacomplete["Prompt Design"].includes("1") &&
-			datacomplete["Develop GenAI"].includes("1")
+			datacomplete["All Skill Badges & Games Completed"].includes("1") &&
+			datacomplete["# of Skill Badges Completed"].includes("1")
 	);
 
 	const getTier = (total) => {
@@ -538,7 +272,9 @@ function DataTable() {
 								className={
 									datacomplete["Completed"] === "Yes"
 										? "bg-green-200"
-										: datacomplete["Redemption"] === "No"
+										: datacomplete[
+												"Access Code Redemption Status"
+										  ] === "No"
 										? "bg-red-50"
 										: ""
 								}
@@ -555,13 +291,25 @@ function DataTable() {
 									</b>
 								</td>
 								<td className="whitespace-nowrap text-center">
-									{datacomplete["Prompt Design"]}
+									{
+										datacomplete[
+											"All Skill Badges & Games Completed"
+										]
+									}
 								</td>
 								<td className="whitespace-nowrap text-center">
-									{datacomplete["Develop GenAI"]}
+									{
+										datacomplete[
+											"# of Skill Badges Completed"
+										]
+									}
 								</td>
 								<td className="whitespace-nowrap text-center">
-									{datacomplete["Gen AI Arcade"]}
+									{
+										datacomplete[
+											"# of Arcade Games Completed"
+										]
+									}
 								</td>
 								<td className="whitespace-nowrap text-center">
 									{datacomplete["Completed"] === "Yes"
@@ -569,7 +317,9 @@ function DataTable() {
 										: "❌"}
 								</td>
 								<td className="whitespace-nowrap text-center">
-									{datacomplete["Redemption"] === "Yes"
+									{datacomplete[
+										"Access Code Redemption Status"
+									] === "Yes"
 										? "☑️"
 										: "❗️"}
 								</td>
