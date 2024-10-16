@@ -1,6 +1,6 @@
 export const Date = "16 Oct 2024, 15:45 ";
 
-[
+export const DataCompletes =[
     {
         "User Name": "Netransh Adhoj",
         "Access Code Redemption Status": "No",
