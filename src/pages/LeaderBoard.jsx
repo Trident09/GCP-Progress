@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { LeaderBoards } from "../assets/leaderBoard";
-import Count from "../components/Count";
 import TopBar from "../components/TopBar";
 
 function LeaderBoard() {
@@ -41,7 +40,6 @@ function LeaderBoard() {
 					</div>
 				</Link>
 			</div>
-			<Count />
 			<div className="py-5 px-0 max-w-7xl md:px-4 w-1/2 flex items-center justify-center mx-auto">
 				<table className="table table-hover fa-border">
 					<thead>

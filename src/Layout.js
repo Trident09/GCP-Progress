@@ -19,7 +19,7 @@ export default function Layout() {
 
 	useEffect(() => {
 		let totalCompletions = DataCompletes.filter((datacomplete) =>
-			datacomplete["Completed"].toLowerCase().includes("yes")
+			datacomplete["All Skill Badges & Games Completed"].toLowerCase().includes("yes")
 		);
 		if (totalCompletions.length >= 60) {
 			setIsConfetti(true);

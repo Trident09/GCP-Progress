@@ -1,12 +1,12 @@
 export const LeaderBoards = [
 	{
 		sl: "1",
-		Name: "Dummy Name",
+		Name: "Urfiya Sharmeen",
 	},
-	// {
-	// 	sl: "2",
-	// 	Name: "RAHUL BERA",
-	// },
+	{
+		sl: "2",
+		Name: "Vikas Tripathi",
+	},
 	// {
 	// 	sl: "3",
 	// 	Name: "Kartik Gautam",
