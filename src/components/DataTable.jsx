@@ -238,7 +238,7 @@ function DataTable() {
                                 <b># of Skill Badges</b>
                             </th>
                             <th scope="col" className="text-center">
-                                <b>All Skill Badges</b>
+                                <b>Completion</b>
                             </th>
                             <th scope="col" className="text-center">
                                 <b>Redemption</b>
