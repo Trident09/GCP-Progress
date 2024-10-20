@@ -1,11 +1,11 @@
 export const Icons = [
 	{
 		name: "logo-linkedin",
-		link: "https://www.linkedin.com/company/gdsc-national-forensic-sciences-university-delhi/",
+		link: "https://www.linkedin.com/company/gdg-national-forensic-sciences-university-delhi",
 	},
 	{
 		name: "logo-twitter",
-		link: "https://twitter.com/GDSCNFSUDelhi",
+		link: "https://x.com/GDSCNFSUDelhi",
 	},
 	{
 		name: "mail",
@@ -17,6 +17,6 @@ export const Icons = [
 	},
 	{
 		name: "logo-instagram",
-		link: "https://www.instagram.com/gdsc_nfsu_delhi/",
+		link: "https://www.instagram.com/gdg_nfsu_delhi",
 	},
 ];
