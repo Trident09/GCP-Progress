@@ -13,7 +13,7 @@ export const Icons = [
 	},
 	{
 		name: "logo-discord",
-		link: "https://discord.gg/4F4PfDhh",
+		link: "https://discord.gg/3gkBTVcE",
 	},
 	{
 		name: "logo-instagram",
