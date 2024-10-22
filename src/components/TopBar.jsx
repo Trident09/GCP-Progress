@@ -6,8 +6,10 @@ function TopBar() {
 		<div className="flex flex-col justify-center items-center mt-4">
 			{/* DISCLAIMER  START */}
 			<div className="flex flex-col justify-center items-center mt-4">
-				<h1 className="text-4xl font-bold p-4 bg bg-red-400 shadow-xl rounded-md text-white mb-4">
+				<h1 className="text-4xl font-bold p-4 bg bg-red-400 shadow-xl rounded-md text-white mb-4 items-center justify-center text-center">
 					<strong>!!!</strong> DISCLAIMER: This event has been postponed to the 1st of November, 2024. <strong>!!!</strong>
+					<br />
+					Please do not attempt any labs until 2nd November 2024.
 				</h1>
 			</div>
 			{/* DISCLAIMER END */}
