@@ -19,17 +19,17 @@ export const LeaderBoards = [
 		sl: "5",
 	 	Name: "RIYA CHAUDHARY",
 	},
-	// {
-	// 	sl: "5",
-	// 	Name: "Manish kumar",
-	// },
-	// {
-	// 	sl: "6",
-	// 	Name: "Kajal Gupta",
-	// },
-	// {
-	// 	sl: "7",
-	// 	Name: "Aman Gupta",
+	 {
+	 	sl: "6",
+	 	Name: "Garv Nihore",
+	 },
+	 {
+	 	sl: "7",
+	 	Name: "Jatin Sharma",
+	 }
+	 {
+	 	sl: "8",
+	 	Name: "Kartik Verma",
 	// },
 	// {
 	// 	sl: "8",
