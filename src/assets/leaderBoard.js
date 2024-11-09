@@ -30,7 +30,7 @@ export const LeaderBoards = [
 	 {
 	 	sl: "8",
 	 	Name: "Kartik Verma",
-	// },
+	 },
 	// {
 	// 	sl: "8",
 	// 	Name: "Prakhar tiwari",
