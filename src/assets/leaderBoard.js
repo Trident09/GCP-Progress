@@ -26,7 +26,7 @@ export const LeaderBoards = [
 	 {
 	 	sl: "7",
 	 	Name: "Jatin Sharma",
-	 }
+	 },
 	 {
 	 	sl: "8",
 	 	Name: "Kartik Verma",
