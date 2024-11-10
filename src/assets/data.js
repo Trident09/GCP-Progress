@@ -1,4 +1,4 @@
-export const Date = "9 November 2024, 20:01 ";
+export const Date = "10 November 2024, 16:05 ";
 
 export const DataCompletes = [
     {
