@@ -35,26 +35,18 @@ export const LeaderBoards = [
 	 	sl: "9",
 	 	Name: "Arunima Negi",
 	 },
-	// {
-	// 	sl: "9",
-	// 	Name: "Aditya Garg",
-	// },
-	// {
-	// 	sl: "10",
-	// 	Name: "Manotosh Sarkar",
-	// },
-	// {
-	// 	sl: "11",
-	// 	Name: "Ayushi Bhasker",
-	// },
-	// {
-	// 	sl: "12",
-	// 	Name: "Bhagyesh Mahesh Katkar",
-	// },
-	// {
-	// 	sl: "13",
-	// 	Name: "Abhishek Prajapati",
-	// },
+	{
+		sl: "10",
+		Name: "Aditya Pratap Bahl",
+	},
+	{
+		sl: "11",
+		Name: "Netransh Adoj",
+	},
+	{
+		sl: "12",
+		Name: "Mansha Rohilla",
+	},
 	// {
 	// 	sl: "14",
 	// 	Name: "Md sohel",
