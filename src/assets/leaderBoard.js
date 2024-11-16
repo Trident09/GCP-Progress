@@ -47,34 +47,38 @@ export const LeaderBoards = [
 		sl: "12",
 		Name: "Mansha Rohilla",
 	},
-	// {
-	// 	sl: "14",
-	// 	Name: "Md sohel",
-	// },
-	// {
-	// 	sl: "15",
-	// 	Name: "Supriya Singh",
-	// },
-	// {
-	// 	sl: "16",
-	// 	Name: "Raj Chakraborty",
-	// },
-	// {
-	// 	sl: "17",
-	// 	Name: "Ayush Anand",
-	// },
-	// {
-	// 	sl: "18",
-	// 	Name: "Jatin Sharma",
-	// },
-	// {
-	// 	sl: "19",
-	// 	Name: "Joyita Bhawal",
-	// },
-	// {
-	// 	sl: "20",
-	// 	Name: "Sachin Narwal",
-	// },
+	{
+		sl: "13",
+		Name: "Gungun Sharma",
+	},
+	{
+		sl: "14",
+		Name: "Himanshu Kumar",
+	},
+	{
+		sl: "15",
+		Name: "Lakshanya Harit",
+	},
+	{
+		sl: "16",
+		Name: "Arpana Uppala",
+	},
+	{
+		sl: "17",
+		Name: "Kushagra Singh",
+	},
+	{
+		sl: "18",
+		Name: "Udbhav Kaushik",
+	},
+	{
+		sl: "19",
+		Name: "Kush Singh",
+	},
+	{
+		sl: "20",
+		Name: "Abhishek Prajapati",
+	},
 	// {
 	// 	sl: "21",
 	// 	Name: "Sumit Kumar",
