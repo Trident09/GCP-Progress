@@ -1,4 +1,4 @@
-export const Date = "17 November 2024, 9:42 ";
+export const Date = "18 November 2024, 18:00 ";
 
 export const DataCompletes = [
     {
@@ -12,7 +12,7 @@ export const DataCompletes = [
         "User Name": "Anshuman Prajapati",
         "Access Code Redemption Status": "Yes",
         "All Skill Badges & Games Completed": "No",
-        "# of Skill Badges Completed": "11",
+        "# of Skill Badges Completed": "13",
         "# of Arcade Games Completed": "1"
     },
     {
@@ -47,8 +47,8 @@ export const DataCompletes = [
         "User Name": "Indu Pathak",
         "Access Code Redemption Status": "Yes",
         "All Skill Badges & Games Completed": "No",
-        "# of Skill Badges Completed": "11",
-        "# of Arcade Games Completed": "0"
+        "# of Skill Badges Completed": "12",
+        "# of Arcade Games Completed": "1"
     },
     {
         "User Name": "Abhijith P A",
@@ -89,7 +89,7 @@ export const DataCompletes = [
         "User Name": "Yashdeep Chaurasia",
         "Access Code Redemption Status": "Yes",
         "All Skill Badges & Games Completed": "No",
-        "# of Skill Badges Completed": "13",
+        "# of Skill Badges Completed": "14",
         "# of Arcade Games Completed": "0"
     },
     {
@@ -102,8 +102,8 @@ export const DataCompletes = [
     {
         "User Name": "Nenavath Shirisha",
         "Access Code Redemption Status": "Yes",
-        "All Skill Badges & Games Completed": "No",
-        "# of Skill Badges Completed": "14",
+        "All Skill Badges & Games Completed": "Yes",
+        "# of Skill Badges Completed": "15",
         "# of Arcade Games Completed": "1"
     },
     {
@@ -152,21 +152,21 @@ export const DataCompletes = [
         "User Name": "VIBHAVASU BHARDWAJ",
         "Access Code Redemption Status": "Yes",
         "All Skill Badges & Games Completed": "No",
-        "# of Skill Badges Completed": "7",
+        "# of Skill Badges Completed": "10",
         "# of Arcade Games Completed": "0"
     },
     {
         "User Name": "Satvik Bhagat",
         "Access Code Redemption Status": "Yes",
-        "All Skill Badges & Games Completed": "No",
-        "# of Skill Badges Completed": "11",
+        "All Skill Badges & Games Completed": "Yes",
+        "# of Skill Badges Completed": "15",
         "# of Arcade Games Completed": "1"
     },
     {
         "User Name": "Rishabh Kumar",
         "Access Code Redemption Status": "Yes",
         "All Skill Badges & Games Completed": "No",
-        "# of Skill Badges Completed": "2",
+        "# of Skill Badges Completed": "3",
         "# of Arcade Games Completed": "0"
     },
     {
@@ -250,7 +250,7 @@ export const DataCompletes = [
         "User Name": "Bhawna Bangwal",
         "Access Code Redemption Status": "Yes",
         "All Skill Badges & Games Completed": "No",
-        "# of Skill Badges Completed": "9",
+        "# of Skill Badges Completed": "11",
         "# of Arcade Games Completed": "1"
     },
     {
@@ -384,7 +384,7 @@ export const DataCompletes = [
         "Access Code Redemption Status": "Yes",
         "All Skill Badges & Games Completed": "No",
         "# of Skill Badges Completed": "3",
-        "# of Arcade Games Completed": "1"
+        "# of Arcade Games Completed": "2"
     },
     {
         "User Name": "Jatin",
@@ -404,7 +404,7 @@ export const DataCompletes = [
         "User Name": "Sourabh",
         "Access Code Redemption Status": "Yes",
         "All Skill Badges & Games Completed": "No",
-        "# of Skill Badges Completed": "10",
+        "# of Skill Badges Completed": "11",
         "# of Arcade Games Completed": "0"
     },
     {
@@ -460,7 +460,7 @@ export const DataCompletes = [
         "User Name": "ANAND KUMAR GUPTA",
         "Access Code Redemption Status": "Yes",
         "All Skill Badges & Games Completed": "No",
-        "# of Skill Badges Completed": "10",
+        "# of Skill Badges Completed": "12",
         "# of Arcade Games Completed": "1"
     },
     {
@@ -600,56 +600,56 @@ export const DataCompletes = [
         "User Name": "Alok Danve",
         "Access Code Redemption Status": "Yes",
         "All Skill Badges & Games Completed": "No",
-        "# of Skill Badges Completed": "12",
+        "# of Skill Badges Completed": "13",
         "# of Arcade Games Completed": "1"
     },
     {
         "User Name": "Piyush Yadav",
         "Access Code Redemption Status": "Yes",
-        "All Skill Badges & Games Completed": "No",
-        "# of Skill Badges Completed": "13",
+        "All Skill Badges & Games Completed": "Yes",
+        "# of Skill Badges Completed": "15",
         "# of Arcade Games Completed": "1"
     },
     {
         "User Name": "PREM KUMAR VERMA",
         "Access Code Redemption Status": "Yes",
-        "All Skill Badges & Games Completed": "No",
-        "# of Skill Badges Completed": "14",
+        "All Skill Badges & Games Completed": "Yes",
+        "# of Skill Badges Completed": "15",
         "# of Arcade Games Completed": "1"
     },
     {
         "User Name": "Arpita Parihar",
         "Access Code Redemption Status": "Yes",
         "All Skill Badges & Games Completed": "No",
-        "# of Skill Badges Completed": "5",
+        "# of Skill Badges Completed": "8",
         "# of Arcade Games Completed": "1"
     },
     {
         "User Name": "Sweta Singh",
         "Access Code Redemption Status": "Yes",
         "All Skill Badges & Games Completed": "No",
-        "# of Skill Badges Completed": "8",
+        "# of Skill Badges Completed": "10",
         "# of Arcade Games Completed": "1"
     },
     {
         "User Name": "Prathmesh Thakur",
         "Access Code Redemption Status": "Yes",
         "All Skill Badges & Games Completed": "No",
-        "# of Skill Badges Completed": "5",
-        "# of Arcade Games Completed": "0"
+        "# of Skill Badges Completed": "6",
+        "# of Arcade Games Completed": "1"
     },
     {
         "User Name": "Dhruv Suri",
         "Access Code Redemption Status": "Yes",
         "All Skill Badges & Games Completed": "No",
-        "# of Skill Badges Completed": "10",
+        "# of Skill Badges Completed": "12",
         "# of Arcade Games Completed": "1"
     },
     {
         "User Name": "Shubhneet Chauhan",
         "Access Code Redemption Status": "Yes",
         "All Skill Badges & Games Completed": "No",
-        "# of Skill Badges Completed": "0",
+        "# of Skill Badges Completed": "2",
         "# of Arcade Games Completed": "0"
     },
     {
@@ -712,21 +712,21 @@ export const DataCompletes = [
         "User Name": "Joysa Kaushik",
         "Access Code Redemption Status": "Yes",
         "All Skill Badges & Games Completed": "No",
-        "# of Skill Badges Completed": "4",
+        "# of Skill Badges Completed": "9",
         "# of Arcade Games Completed": "1"
     },
     {
         "User Name": "Joysa Kaushik",
         "Access Code Redemption Status": "Yes",
         "All Skill Badges & Games Completed": "No",
-        "# of Skill Badges Completed": "9",
+        "# of Skill Badges Completed": "12",
         "# of Arcade Games Completed": "1"
     },
     {
         "User Name": "Vandna Sharma",
         "Access Code Redemption Status": "Yes",
         "All Skill Badges & Games Completed": "No",
-        "# of Skill Badges Completed": "5",
+        "# of Skill Badges Completed": "7",
         "# of Arcade Games Completed": "1"
     },
     {
@@ -740,14 +740,14 @@ export const DataCompletes = [
         "User Name": "Ram Kaushik",
         "Access Code Redemption Status": "Yes",
         "All Skill Badges & Games Completed": "No",
-        "# of Skill Badges Completed": "7",
+        "# of Skill Badges Completed": "11",
         "# of Arcade Games Completed": "1"
     },
     {
         "User Name": "MUHAMMED ASLAH K",
         "Access Code Redemption Status": "Yes",
         "All Skill Badges & Games Completed": "No",
-        "# of Skill Badges Completed": "10",
+        "# of Skill Badges Completed": "13",
         "# of Arcade Games Completed": "1"
     },
     {
@@ -761,7 +761,7 @@ export const DataCompletes = [
         "User Name": "Tushar Pal",
         "Access Code Redemption Status": "Yes",
         "All Skill Badges & Games Completed": "No",
-        "# of Skill Badges Completed": "7",
+        "# of Skill Badges Completed": "10",
         "# of Arcade Games Completed": "1"
     },
     {
@@ -775,7 +775,7 @@ export const DataCompletes = [
         "User Name": "Devanshu",
         "Access Code Redemption Status": "Yes",
         "All Skill Badges & Games Completed": "No",
-        "# of Skill Badges Completed": "8",
+        "# of Skill Badges Completed": "9",
         "# of Arcade Games Completed": "1"
     },
     {
@@ -803,21 +803,21 @@ export const DataCompletes = [
         "User Name": "Shivam Kumar Singh",
         "Access Code Redemption Status": "Yes",
         "All Skill Badges & Games Completed": "No",
-        "# of Skill Badges Completed": "2",
+        "# of Skill Badges Completed": "3",
         "# of Arcade Games Completed": "0"
     },
     {
         "User Name": "mahak bansal",
         "Access Code Redemption Status": "Yes",
         "All Skill Badges & Games Completed": "No",
-        "# of Skill Badges Completed": "12",
+        "# of Skill Badges Completed": "13",
         "# of Arcade Games Completed": "1"
     },
     {
         "User Name": "Harshita",
         "Access Code Redemption Status": "Yes",
         "All Skill Badges & Games Completed": "No",
-        "# of Skill Badges Completed": "11",
+        "# of Skill Badges Completed": "12",
         "# of Arcade Games Completed": "1"
     },
     {
@@ -873,14 +873,14 @@ export const DataCompletes = [
         "User Name": "Sampada Kaushik",
         "Access Code Redemption Status": "Yes",
         "All Skill Badges & Games Completed": "No",
-        "# of Skill Badges Completed": "5",
+        "# of Skill Badges Completed": "9",
         "# of Arcade Games Completed": "1"
     },
     {
         "User Name": "Ananta Sharma",
         "Access Code Redemption Status": "Yes",
         "All Skill Badges & Games Completed": "No",
-        "# of Skill Badges Completed": "4",
+        "# of Skill Badges Completed": "9",
         "# of Arcade Games Completed": "1"
     },
     {
